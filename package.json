@@ -14,5 +14,14 @@
     "node-spotify-api": "^1.0.7",
     "request": "^2.87.0",
     "twitter": "^1.7.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chancejm/Liri-Bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/chancejm/Liri-Bot/issues"
+  },
+  "homepage": "https://github.com/chancejm/Liri-Bot#readme"
 }
