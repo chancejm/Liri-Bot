@@ -56,9 +56,18 @@ function doWhatItSays() {//   * `do-what-it-says`
         if (err) {
             return console.log(err);
         }
-        // console.log(data);
-        action = data;
-        spotifyThisSong();
+        let arr = data.split(",");
+        // console.log(arr);
+        let choice = Math.floor(Math.random()*6);
+        // console.log(arr[choice]);
+        action = arr[choice];
+        if(choice > 2) {
+            console.log("***movie-this "+arr[choice]+"***");
+            movieThis();
+        } else if (choice <= 2){
+            console.log("***spotify-this-song "+arr[choice]+"***");
+            spotifyThisSong();
+        };
 
     });
 };
